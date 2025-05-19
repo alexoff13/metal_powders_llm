@@ -5,8 +5,7 @@ import json
 from consts import PROMPT
 
 # Настройка API Gemini
-genai.configure(api_key='')# указать ключ gemini api
-
+genai.configure(api_key='AIzaSyB36f3xDheG7iNKMdQ1W56IPensNQxEDJs')# указать ключ gemini api
 # Конфигурация модели
 model = genai.GenerativeModel(
     "gemini-1.5-flash",
@@ -48,7 +47,7 @@ def process_descriptions(output_file: str, delay: int = 10):
     
     with open(output_file, mode='w', encoding='utf-8') as f:
         for i, desc in enumerate(descriptions.split('\n')):
-            if i > 20:
+            if i > 5:
                 break
             if not desc.strip():
                 continue
