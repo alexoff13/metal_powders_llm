@@ -5,7 +5,7 @@ import json
 from consts import PROMPT
 
 # Настройка API Gemini
-genai.configure(api_key='AIzaSyB36f3xDheG7iNKMdQ1W56IPensNQxEDJs')# указать ключ gemini api
+genai.configure(api_key='')# указать ключ gemini api
 # Конфигурация модели
 model = genai.GenerativeModel(
     "gemini-1.5-flash",
